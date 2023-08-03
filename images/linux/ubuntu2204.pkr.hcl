@@ -157,7 +157,7 @@ source "azure-arm" "build_vhd" {
   image_publisher                        = "canonical"
   image_sku                              = "22_04-lts"
   location                               = "${var.location}"
-  os_disk_size_gb                        = "86"
+  os_disk_size_gb                        = "256"
   os_type                                = "Linux"
   private_virtual_network_with_public_ip = "${var.private_virtual_network_with_public_ip}"
   resource_group_name                    = "${var.resource_group}"
